@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/*
+:root{
+
+}
+*/
+@media only screen and (max-width: 2560px) and (min-width: 0px) {
+  html {
+    font-size: 22px;
+  }
+  .NavTitle {
+    font-size: 30px;
+  }
+  .NavButton {
+    height: 30px;
+    width: 30px;
+  }
+  .MainGalleryContainer {
+    max-width: 1600px;
+  }
+  .InfoCardContainer {
+    max-width: 1450px;
+  }
+  .ParagraphCardContainer {
+    max-width: 1450px;
+  }
+}
+@media only screen and (max-width: 5600px) and (min-width: 2561px) {
+  html {
+    font-size: 24px;
+  }
+  .NavTitle {
+    font-size: 32px;
+  }
+  .NavButton {
+    height: 32px;
+    width: 32px;
+  }
+  .MainGalleryContainer {
+    max-width: 2070px;
+  }
+  .InfoCardContainer {
+    max-width: 1920px;
+  }
+  .ParagraphCardContainer {
+    max-width: 1920px;
+  }
+}
+/*
+@media only screen and (max-width: 3840px) and (min-width: 2561px){
+
+    html {
+
+        font-size: 48px;
+
+    }
+
+    .NavTitle {
+
+        font-size: 56px;
+
+    }
+
+    .NavButton {
+
+        height: 56px;
+        width: 56px;
+
+    }
+
+    .MainGalleryContainer {
+
+        max-width: 3520px;
+
+    }
+
+    .InfoCardContainer {
+
+        max-width: 3370px;
+
+    }
+
+    .ParagraphCardContainer {
+
+        max-width: 3370px;
+
+    }
+
+}
+
+@media only screen and (max-width: 5600px) and (min-width: 3841px){
+
+    html {
+
+        font-size: 48px;
+
+    }
+
+    .NavTitle {
+
+        font-size: 56px;
+
+    }
+
+    .NavButton {
+
+        height: 56px;
+        width: 56px;
+
+    }
+
+    .MainGalleryContainer {
+
+        max-width: 5280px;
+
+    }
+
+    .InfoCardContainer {
+
+        max-width: 5130px;
+
+    }
+
+    .ParagraphCardContainer {
+
+       max-width: 5130px;
+
+    }
+
+}
+*/
+@media only screen and (max-width: 5600px) and (min-width: 0px) {
+  html {
+    font-family: sans-serif;
+    background: rgb(30, 30, 30);
+  }
+  body {
+    width: 100%;
+    min-height: 100vh;
+    border: 0px dashed red;
+  }
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(80, 80, 80);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(120, 120, 120);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 160, 160);
+  }
+  .NavBar {
+    height: 3rem;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    display: grid;
+    align-items: center;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    background: rgb(40, 40, 40);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  .NavBar .NavTitleContainer {
+    height: 100%;
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+  }
+  .NavBar .NavTitleContainer .NavTitle {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    font-family: serif;
+    text-decoration: underline;
+    text-shadow: 0.075rem 0.075rem 0.15rem rgba(0, 0, 0, 0.75);
+  }
+  .NavBar .NavButtonContainer {
+    height: 100%;
+    grid-column: 3/3;
+    display: grid;
+    align-items: center;
+    justify-content: right;
+  }
+  .NavBar .NavButtonContainer .NavButton {
+    transform: scale(1);
+    fill: rgb(255, 255, 255);
+  }
+  .MainGallerySection {
+    z-index: -1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(40, 40, 40), rgb(20, 20, 20));
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  .MainGallerySection .MainGalleryContainer {
+    margin: 1rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery {
+    padding: 1rem 1rem;
+    -moz-column-count: 0;
+         column-count: 0;
+    gap: 0;
+    display: flex;
+    align-items: center;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery .MainGalleryPhotoContainer {
+    width: 100%;
+    display: flex;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery .MainGalleryPhotoContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: left top;
+       object-position: left top;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
+    filter: sepia(33%) brightness(85%) opacity(100%);
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery .MainGalleryPhotoContainer #MainGalleryPhotoOne {
+    z-index: -1;
+    scale: 0.8;
+    rotate: -2.5deg;
+    translate: 5rem 0;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery .MainGalleryPhotoContainer #MainGalleryPhotoTwo {
+    z-index: 0;
+    scale: 1;
+    rotate: 0deg;
+    translate: 0 0;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery .MainGalleryPhotoContainer #MainGalleryPhotoThree {
+    z-index: -1;
+    scale: 0.8;
+    rotate: 2.5deg;
+    translate: -5rem 0;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery #MainGalleryPhotoContainerOne {
+    position: relative;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery #MainGalleryPhotoContainerTwo {
+    position: relative;
+  }
+  .MainGallerySection .MainGalleryContainer .MainGallery #MainGalleryPhotoContainerThree {
+    position: relative;
+  }
+  .IntroBanner {
+    height: 5rem;
+    margin: 0 0 2rem 0;
+    z-index: -1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+    background: rgb(50, 50, 50);
+  }
+  .IntroBanner .IntroBannerPhraseContainer {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    gap: 1rem;
+    display: flex;
+    flex-flow: wrap;
+    place-content: center;
+    justify-content: center;
+  }
+  .IntroBanner .IntroBannerPhraseContainer .IntroBannerPhrase {
+    display: flex;
+  }
+  .IntroBanner .IntroBannerPhraseContainer .IntroBannerPhrase p {
+    font-family: serif;
+    font-size: 1.5rem;
+    text-shadow: 0.075rem 0.075rem 0.15rem rgba(0, 0, 0, 0.75);
+  }
+  .InfoCardSection {
+    z-index: -1;
+    margin: 1rem 4rem 1rem 4rem;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .InfoCardSection .InfoCardContainer {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .InfoCardSection .InfoCardContainer .InfoCard {
+    width: 100%;
+    -moz-column-count: 2;
+         column-count: 2;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .InfoCardSection .InfoCardContainer .InfoCard .InfoCardDescription {
+    width: 40%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    background: rgb(120, 120, 120);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  .InfoCardSection .InfoCardContainer .InfoCard .InfoCardDescription p {
+    text-indent: 2rem;
+    line-height: 2rem;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.25);
+  }
+  .InfoCardSection .InfoCardContainer .InfoCard .InfoCardPhoto {
+    width: 60%;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  .InfoCardSection .InfoCardContainer .InfoCard .InfoCardPhoto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left top;
+       object-position: left top;
+    filter: sepia(33%) brightness(85%) opacity(100%);
+  }
+  .ParagraphCardSection {
+    margin: 1rem 4rem 1rem 4rem;
+    z-index: -1;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .ParagraphCardSection .ParagraphCardContainer {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    background: rgb(120, 120, 120);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  .ParagraphCardSection .ParagraphCardContainer p {
+    text-indent: 2rem;
+    line-height: 2rem;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.25);
+  }
+  .FooterBar {
+    height: 6rem;
+    margin: 2rem 0 0 0;
+    top: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20, 20, 20);
+  }
+  .FooterBar .FooterBarContainer {
+    height: 100%;
+    gap: 0.25rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .FooterBar .FooterBarContainer p {
+    color: rgb(80, 80, 80);
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.75);
+  }
+}/*# sourceMappingURL=style.css.map */
