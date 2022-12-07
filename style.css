@@ -320,6 +320,7 @@
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
   }
   .InfoCardSection .InfoCardContainer .InfoCard .InfoCardDescription p {
+    font-size: 0.9rem;
     text-indent: 2rem;
     line-height: 2rem;
     font-family: sans-serif;
@@ -340,7 +341,7 @@
        object-fit: cover;
     -o-object-position: left top;
        object-position: left top;
-    filter: sepia(33%) brightness(85%) opacity(100%);
+    filter: sepia(40%) brightness(85%) opacity(100%);
   }
   .ParagraphCardSection {
     margin: 1rem 4rem 1rem 4rem;
@@ -357,10 +358,51 @@
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
   }
   .ParagraphCardSection .ParagraphCardContainer p {
+    font-size: 0.9rem;
     text-indent: 2rem;
     line-height: 2rem;
     font-family: sans-serif;
     color: rgb(0, 0, 0);
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.25);
+  }
+  .ParagraphCardSection .Source {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+  }
+  .SourceCardSection {
+    margin: 1rem 4rem 1rem 4rem;
+    z-index: -1;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .SourceCardSection .SourceCardContainer {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    background: rgb(120, 120, 120);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  .SourceCardSection .SourceCardContainer .Source {
+    font-size: 0.9rem;
+    font-family: serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.25);
+  }
+  .SourcePageTitleContainer {
+    margin: 4rem 4rem 2rem 4rem;
+    z-index: -1;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .SourcePageTitleContainer .SourcePageTitle {
+    font-size: 2rem;
+    font-family: serif;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
     text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.25);
   }
   .FooterBar {
@@ -379,8 +421,10 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(20, 20, 20);
   }
   .FooterBar .FooterBarContainer p {
+    font-size: 0.75rem;
     color: rgb(80, 80, 80);
     text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.75);
   }
